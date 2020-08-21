@@ -1,0 +1,32 @@
+version: '3.8'
+services:
+    client:
+        container_name: client
+        links:
+          - server
+        ports:
+          - 1357:80
+        build:
+            context: .
+            dockerfile: client.Dockerfile
+
+    server:
+        container_name: server
+        links:
+          - database
+        ports:
+          - 2468:2468
+        build:
+            context: .
+            dockerfile: server.Dockerfile
+
+    database:
+        image: mongo:4.4.0
+        container_name: database
+        ports:
+          - 27017:27017
+        volumes:
+          - db_data:/data/db
+
+volumes:
+    db_data:
