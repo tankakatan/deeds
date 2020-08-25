@@ -1,0 +1,16 @@
+{
+    "compileOnSave": true,
+    "compilerOptions": {
+        "module": "es6",
+        "noImplicitAny": true,
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+        "declaration": true,
+        "allowJs": false,
+        "skipLibCheck": true,
+        "lib": ["ES2019"],
+        "target": "es2019",
+        "outDir": "build"
+    },
+    "include": ["src/**/*"]
+}

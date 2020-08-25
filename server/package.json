@@ -1,0 +1,27 @@
+{
+  "name": "discipline-server",
+  "version": "1.0.0",
+  "description": "API for deeds management",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx typescript",
+    "watch": "npx typescript -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tankakatan/deeds.git"
+  },
+  "author": "Takatan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tankakatan/deeds/issues"
+  },
+  "homepage": "https://github.com/tankakatan/deeds#readme",
+  "dependencies": {
+    "mongodb": "^3.6.0"
+  },
+  "devDependencies": {
+    "@types/mongodb": "^3.5.26"
+  }
+}
